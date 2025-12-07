@@ -13,12 +13,15 @@
       inherit system;
     };
   in {
+    #I tried to fix the lsp errors but ehh didn't work
     devShells.${system}.default = pkgs.mkShell {
       packages = with pkgs; [
         libgcc
         cmake
         gnumake
         gdb
+        clang
+        clang-tools
       ];
       shellHook = ''
         echo "C++ devShell"
