@@ -17,6 +17,7 @@
     devShells.${system}.default = pkgs.mkShell {
       packages = with pkgs; [
         libgcc
+        bear
         cmake
         gnumake
         gdb
