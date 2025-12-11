@@ -23,6 +23,7 @@
         gdb
         clang
         clang-tools
+        z3
       ];
       shellHook = ''
         echo "C++ devShell"
